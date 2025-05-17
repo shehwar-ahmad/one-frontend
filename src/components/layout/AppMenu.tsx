@@ -13,7 +13,7 @@ const menu = [
 
 const AppMenu = () => {
   return (
-    <nav className="flex items-center lg:gap-4">
+    <nav className="flex items-center lg:gap-4 mx-auto ">
       {menu.map((item) => (
         <Link
           key={item.name}

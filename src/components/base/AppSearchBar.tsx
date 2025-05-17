@@ -2,7 +2,7 @@ import MagnifyingGlass from "@/assets/MagnifyingGlass.svg";
 
 const AppSearchBar = () => {
   return (
-    <div className="relative flex-1 mx-4 p-2 border border-solid border-[#0000001A] w-full max-w-[692px] rounded-[100px] h-[43px]">
+    <div className="relative flex-1 p-2 border border-solid border-[#0000001A] w-full min-w-[300px] max-w-[692px] rounded-[100px] h-[43px]">
       <input
         type="text"
         placeholder="Search Watches"

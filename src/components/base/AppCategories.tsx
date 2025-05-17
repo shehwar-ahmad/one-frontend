@@ -13,14 +13,16 @@ interface AppCategoriesProps {
 const AppCategories = ({ categories }: AppCategoriesProps) => {
   return (
     <div className="container mx-auto py-4">
-      <div className="flex items-center flex-wrap font-medium text-[15px] leading-[50px] tracking-[0%]">
+      <div className="flex items-center flex-wrap font-medium text-[12px] sm:text-[15px] leading-[25px] tracking-[0%]">
         <span className="text-[#42424280] mr-4">Categories</span>
         <span className="text-[#929299] mr-4 ">|</span>
         {categories.map((category, index) => (
           <div key={category.name} className="flex items-center">
             <Link
               to={category.route}
-              className={classNames("mr-4 text-[#42424280]", { "text-secondary": index === 0 })}
+              className={classNames("mr-4 text-[#42424280]", {
+                "text-secondary": index === 0,
+              })}
             >
               {category.name}
             </Link>
