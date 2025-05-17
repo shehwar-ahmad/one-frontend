@@ -1,7 +1,16 @@
+import AppCategories from "@/components/base/AppCategories";
+
 const HomePage = () => {
+  const watchCategories = [
+    { name: "Retro Watches", route: "/category/retro" },
+    { name: "Fancy Watches", route: "/category/fancy" },
+    { name: "New Watches", route: "/category/new" },
+    { name: "Gadget Watches", route: "/category/gadget" },
+  ];
+
   return (
-    <div className="mx-auto py-8 px-4">
-      <h1 className="text-3xl font-bold mb-6">Welcome to our Watch Store</h1>
+    <div>
+      <AppCategories categories={watchCategories} />
     </div>
   );
 };

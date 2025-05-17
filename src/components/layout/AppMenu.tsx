@@ -13,12 +13,12 @@ const menu = [
 
 const AppMenu = () => {
   return (
-    <nav className="flex items-center">
+    <nav className="flex items-center lg:gap-4">
       {menu.map((item) => (
         <Link
           key={item.name}
           to={item.route}
-          className="px-4 text-gray-600 hover:text-gray-900"
+          className="px-4 font-medium text-[17px] leading-[25px] text-[#0000008C] hover:text-gray-900"
         >
           {item.name}
         </Link>
